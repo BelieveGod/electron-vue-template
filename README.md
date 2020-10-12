@@ -31,7 +31,7 @@ npm test
 # 如若实在不行无法安装electron依赖，请使用
 npm config edit
 # 该命令会打开npm的配置文件，请在registry=https://registry.npm.taobao.org/这行代码后的下一行添加
-# electron_mirror=https://cdn.npm.taobao.org/dist/electron/  和  ELECTRON_BUILDER_BINARIES_MIRROR=http://npm.taobao.org/mirrors/electron-builder-binaries
+# electron_mirror=https://cdn.npm.taobao.org/dist/electron/  和  ELECTRON_BUILDER_BINARIES_MIRROR=http://npm.taobao.org/mirrors/electron-builder-binaries/
 # 然后关闭该窗口，重启命令行，删除node_modules文件夹，并重新安装依赖即可
 
 ```
@@ -42,7 +42,7 @@ npm config edit
 这是花裤衩大大原本的[地址](https://github.com/PanJiaChen/electron-vue-admin)
 
 # 更新日志
-- 2020年10月12日：例行更新基础依赖，准备跟进webpack5
+- 2020年10月12日：例行更新基础依赖，准备跟进webpack5，去除已经废弃的插件
 - 2020年09月12日：更新依赖，去除.electron-vue中的冗余代码，将已经转入维护模式happypack修改为thread-loader。
 - 2020年09月10日：例行更新依赖，感谢 @BelinChung 贡献代码，修正bug。
 - 2020年04月30日：添加内置服务端关闭方法，进一步简化登录流程；多窗口文档已就绪，服务端说明已补充。
