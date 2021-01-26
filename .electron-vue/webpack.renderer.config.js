@@ -216,7 +216,6 @@ let rendererConfig = {
 if (process.env.NODE_ENV !== 'production' && !IsWeb) {
   rendererConfig.plugins.push(
     new webpack.DefinePlugin({
-      '__static': `"${path.join(__dirname, '../static').replace(/\\/g, '\\\\')}"`,
       '__lib': `"${path.join(__dirname, `../${config.DllFolder}`).replace(/\\/g, '\\\\')}"`
     })
   )
